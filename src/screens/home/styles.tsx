@@ -13,20 +13,15 @@ export const useStyles = () =>
         },
         addButton: {
           position: 'absolute',
-          right: 20,
-          bottom: 20,
-
-          width: 60,
-          height: 60,
-          borderRadius: 16,
-
+          right: moderateScale(20),
+          bottom: moderateScale(20),
+          width: moderateScale(60),
+          height: moderateScale(60),
+          borderRadius: moderateScale(16),
           backgroundColor: Colors.GREEN,
           justifyContent: 'center',
           alignItems: 'center',
-
           zIndex: 999, // iOS
-          elevation: 20, // Android
-
           shadowColor: Colors.BLACK,
           shadowOffset: {
             width: 0,
@@ -70,11 +65,42 @@ export const useStyles = () =>
           backgroundColor: Colors.WHITE,
           borderRadius: moderateScale(20),
           padding: moderateScale(15),
-
           zIndex: 2,
-          elevation: 5,
         },
-      }),
+        card: {
+          flexDirection: 'row',
+          alignItems: 'center',
+          backgroundColor: Colors.WHITE,
+          borderRadius: moderateScale(15),
+          padding: moderateScale(12),
+          marginBottom: moderateScale(15),
+          elevation: 3,
+        },
 
+        image: {
+          width: moderateScale(100),
+          height: moderateScale(100),
+          borderRadius: moderateScale(12),
+        },
+
+        info: {
+          marginLeft: moderateScale(15),
+        },
+
+        courseName: {
+          fontSize: moderateScale(18),
+          fontWeight: '600',
+          color: '#000',
+        },
+
+        videoText: {
+          marginTop: moderateScale(5),
+          color: Colors.ORANGE,
+          fontWeight: '600',
+        },
+        contentContainerStyle: {
+          paddingBottom: moderateScale(30),
+        }
+      }),
     [],
   );

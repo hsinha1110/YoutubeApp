@@ -1,12 +1,14 @@
-import { ImageSourcePropType, StyleProp, ViewStyle } from 'react-native';
+import { ImageSourcePropType, StyleProp, TextStyle, ViewStyle } from 'react-native';
 import { SafeAreaViewProps } from 'react-native-safe-area-context';
+
 
 export interface IconTextButtonProps {
   title?: string;
-  Icon?: React.ComponentType<any>;
-  onPress?: () => void | Promise<void>;
-  style?: StyleProp<ViewStyle>;
+  Icon?: any;
+  onPress: () => void;
+  style?: any;
   color?: string;
+  textStyle?: TextStyle;
 }
 
 export interface WrapperContainerProps extends SafeAreaViewProps {
@@ -27,4 +29,12 @@ export interface InputFieldProps {
 export interface ImagePickerProps {
   image?: string;
   onChange: (uri: string) => void;
+}
+
+export interface AddVideoModalProps {
+  visible: boolean;
+  youtubeLink: string;
+  setYoutubeLink: (text: string) => void;
+  onClose: () => void;
+  onSave: () => void;
 }

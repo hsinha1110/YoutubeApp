@@ -1,9 +1,8 @@
 import { useMemo } from 'react';
 import { StyleSheet } from 'react-native';
-
-import Colors from '@/constants/Colors';
 import { FONTS, FONT_SIZE } from '@/constants/Fonts';
 import { moderateScale } from '@/styles/scaling';
+import Colors from '@/constants/Colors';
 
 export const useStyles = () =>
   useMemo(
@@ -52,9 +51,18 @@ export const useStyles = () =>
           marginTop: moderateScale(5),
         },
         addButton: {
-          width: '90%',
+          backgroundColor: Colors.GREEN,
+          marginTop: moderateScale(20),
+          marginHorizontal: moderateScale(20),
+          color: Colors.WHITE,
+          borderRadius: moderateScale(10),
         },
-        
+        addButtonText: {
+          padding: moderateScale(5),
+          color: Colors.WHITE,
+          fontSize: moderateScale(16),
+          fontFamily: FONTS.POPPINS_SEMIBOLD,
+        }
       }),
     [],
   );

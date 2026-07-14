@@ -5,6 +5,7 @@ import Routes from '@/constants/Routes';
 export type RootStackParamList = {
   [Routes.HOME_SCREEN]: undefined;
   [Routes.ADD_SCREEN]: undefined;
+  [Routes.ADD_DETAILS_SCREEN]: undefined;
 };
 
 export type HomeScreenNavigationProp = NativeStackNavigationProp<
@@ -30,4 +31,8 @@ export interface InputFieldProps {
   value: string;
   onChangeText: (text: string) => void;
   placeholder: string;
+}
+export interface AddCourseParams {
+  courseName: string;
+  imagePath: string;
 }
