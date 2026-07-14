@@ -3,6 +3,7 @@ import { useMemo } from 'react';
 import { StyleSheet } from 'react-native';
 import { moderateScale } from '@/styles/scaling';
 import { FONT_SIZE, FONTS } from '@/constants/Fonts';
+
 export const useStyles = () =>
   useMemo(
     () =>
@@ -21,14 +22,14 @@ export const useStyles = () =>
           backgroundColor: Colors.GREEN,
           justifyContent: 'center',
           alignItems: 'center',
-          zIndex: 999, // iOS
+          zIndex: 999,
           shadowColor: Colors.BLACK,
           shadowOffset: {
             width: 0,
-            height: 4,
+            height: moderateScale(4),
           },
           shadowOpacity: 0.3,
-          shadowRadius: 8,
+          shadowRadius: moderateScale(8),
         },
         greenContainer: {
           marginTop: moderateScale(20),
@@ -61,7 +62,7 @@ export const useStyles = () =>
           position: 'absolute',
           top: moderateScale(150),
           width: '100%',
-          height: '80%',
+          height: moderateScale(700),
           backgroundColor: Colors.WHITE,
           borderRadius: moderateScale(20),
           padding: moderateScale(15),
@@ -74,7 +75,16 @@ export const useStyles = () =>
           borderRadius: moderateScale(15),
           padding: moderateScale(12),
           marginBottom: moderateScale(15),
+          // Android
           elevation: 3,
+          // iOS
+          shadowColor: Colors.BLACK,
+          shadowOffset: {
+            width: 0,
+            height: 2,
+          },
+          shadowOpacity: 0.15,
+          shadowRadius: moderateScale(4),
         },
 
         image: {
@@ -90,7 +100,7 @@ export const useStyles = () =>
         courseName: {
           fontSize: moderateScale(18),
           fontWeight: '600',
-          color: '#000',
+          color:Colors.BLACK,
         },
 
         videoText: {
