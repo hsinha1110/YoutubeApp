@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Pressable, Text, View } from 'react-native';
-import { useStyles } from './styles';
+import { useStyles } from '@/screens/home/styles';
 import { ItemHomeScreenProps } from '@/types';
 import { navigate } from '@/utils/navigationUtils';
 import Routes from '@/constants/Routes';

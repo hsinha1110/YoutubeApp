@@ -10,7 +10,7 @@ import IconTextButton from '@/components/Button/Button';
 import Images from '@/constants/Images';
 import Header from '@/components/Header/Header';
 import Routes from '@/constants/Routes';
-import ItemHomeScreen from './ItemHomeScreen';
+import ItemHomeScreen from '@/screens/home/ItemHomeScreen';
 
 const HomeScreen: React.FC = () => {
   const [courses, setCourses] = useState<any[]>([]);

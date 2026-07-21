@@ -3,7 +3,7 @@ import { Alert, Text, View } from 'react-native';
 import { ChevronLeftIcon } from 'react-native-heroicons/outline';
 import { goBack } from '@/utils/navigationUtils';
 import { AddCourseParams } from '@/navigations/types';
-import { useStyles } from './styles';
+import { useStyles } from '@/screens/add/styles';
 import ImagePicker from '@/components/Picker/ImagePicker';
 import Colors from '@/constants/Colors';
 import WrapperContainer from '@/components/Wrapper/WrapperContainer';

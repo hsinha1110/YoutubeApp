@@ -10,7 +10,7 @@ import Colors from '@/constants/Colors';
 import firestore from '@react-native-firebase/firestore';
 import AddVideoModal from '@/components/Modal/AddVideoModal';
 import Header from '@/components/Header/Header';
-import ItemVideo from '../video/ItemVideos';
+import ItemVideo from '@/screens/video/ItemVideos';
 
 const DetailsScreen: FC = () => {
   const [youtubeLink, setYoutubeLink] = useState('');
