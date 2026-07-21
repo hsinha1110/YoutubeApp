@@ -3,7 +3,6 @@ import {
   CommonActions,
   StackActions,
 } from '@react-navigation/native';
-
 export const navigationRef = createNavigationContainerRef();
 
 export async function navigate(routeName: string, params?: object) {

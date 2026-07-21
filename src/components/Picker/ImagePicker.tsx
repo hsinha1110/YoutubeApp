@@ -1,9 +1,9 @@
 import React from 'react';
+import Colors from '@/constants/Colors';
 import { Image, Pressable } from 'react-native';
-import { CameraIcon, PhotoIcon } from 'react-native-heroicons/solid';
+import { CameraIcon } from 'react-native-heroicons/solid';
 import { launchImageLibrary } from 'react-native-image-picker';
 import { useStyles } from '@/components/Picker/styles';
-import Colors from '@/constants/Colors';
 import { ImagePickerProps } from '@/components/types';
 
 const ImagePicker: React.FC<ImagePickerProps> = ({ image, onChange }) => {

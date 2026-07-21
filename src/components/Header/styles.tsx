@@ -1,3 +1,4 @@
+import Colors from '@/constants/Colors';
 import { FONT_SIZE, FONTS } from '@/constants/Fonts';
 import { moderateScale, scale } from '@/styles/scaling';
 import { useMemo } from 'react';
@@ -14,7 +15,7 @@ export const useStyles = () =>
           paddingHorizontal: moderateScale(20),
         },
         title: {
-          fontFamily: FONTS.POPPINS_SEMIBOLD,
+          fontWeight: 'bold',
           fontSize: FONT_SIZE.TITLE,
         },
         image: {

@@ -14,6 +14,8 @@ import ItemHomeScreen from './ItemHomeScreen';
 
 const HomeScreen: React.FC = () => {
   const [courses, setCourses] = useState<any[]>([]);
+  const [courseCount, setCourseCount] = useState(0);
+
   const styles = useStyles();
 
   useEffect(() => {
@@ -25,7 +27,9 @@ const HomeScreen: React.FC = () => {
           id: doc.id,
           ...doc.data(),
         }));
+        setCourseCount(snapshot.size);
 
+        console.log('Total Courses:', snapshot.size);
         setCourses(list);
       });
 
@@ -37,36 +41,34 @@ const HomeScreen: React.FC = () => {
   };
 
   return (
-    <WrapperContainer edges={['top', 'bottom']}>
-      <View style={styles.container}>
-        <Header title="Courses" image={Images.BOY} />
+    <WrapperContainer style={styles.container}>
+      <Header title="Courses" image={Images.BOY} />
 
-        <IconTextButton
-          onPress={handlePress}
-          style={styles.addButton}
-          Icon={PlusIcon}
-          color={Colors.WHITE}
-        />
+      <IconTextButton
+        onPress={handlePress}
+        style={styles.addButton}
+        Icon={PlusIcon}
+        color={Colors.WHITE}
+      />
 
-        <View style={styles.greenContainer}>
-          <View style={styles.textContainer}>
-            <Text style={styles.title}>Hi, Himanshu!</Text>
+      <View style={styles.greenContainer}>
+        <View style={styles.textContainer}>
+          <Text style={styles.title}>Hi, Himanshu!</Text>
 
-            <Text style={styles.subTitle}>
-              Embark on a thrilling journey where React Native comes to change
-              life!
-            </Text>
-          </View>
+          <Text style={styles.subTitle}>
+            Embark on a thrilling journey where React Native comes to change
+            life!
+          </Text>
+        </View>
 
-          <View style={styles.whiteCard}>
-            <FlatList
-              data={courses}
-              keyExtractor={item => item.id}
-              renderItem={({ item }) => <ItemHomeScreen item={item} />}
-              showsVerticalScrollIndicator={false}
-              contentContainerStyle={styles.contentContainerStyle}
-            />
-          </View>
+        <View style={styles.whiteCard}>
+          <FlatList
+            data={courses}
+            keyExtractor={item => item.id}
+            renderItem={({ item }) => <ItemHomeScreen item={item} />}
+            showsVerticalScrollIndicator={false}
+            contentContainerStyle={styles.contentContainerStyle}
+          />
         </View>
       </View>
     </WrapperContainer>

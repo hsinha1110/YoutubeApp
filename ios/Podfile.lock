@@ -2779,6 +2779,27 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
+  - react-native-webview (14.0.1):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - Yoga
   - React-NativeModulesApple (0.86.0):
     - hermes-engine
     - React-callinvoker
@@ -3214,7 +3235,7 @@ PODS:
     - ReactNativeDependencies
     - RNFBApp
     - Yoga
-  - RNReanimated (4.5.1):
+  - RNReanimated (4.5.2):
     - hermes-engine
     - RCTRequired
     - RCTTypeSafety
@@ -3235,35 +3256,12 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
-    - RNReanimated/apple (= 4.5.1)
-    - RNReanimated/common (= 4.5.1)
-    - RNReanimated/view (= 4.5.1)
+    - RNReanimated/apple (= 4.5.2)
+    - RNReanimated/common (= 4.5.2)
+    - RNReanimated/view (= 4.5.2)
     - RNWorklets
     - Yoga
-  - RNReanimated/apple (4.5.1):
-    - hermes-engine
-    - RCTRequired
-    - RCTTypeSafety
-    - React-Core
-    - React-debug
-    - React-Fabric
-    - React-featureflags
-    - React-graphics
-    - React-hermes
-    - React-ImageManager
-    - React-jsi
-    - React-NativeModulesApple
-    - React-RCTFabric
-    - React-renderercss
-    - React-rendererdebug
-    - React-utils
-    - ReactCodegen
-    - ReactCommon/turbomodule/bridging
-    - ReactCommon/turbomodule/core
-    - ReactNativeDependencies
-    - RNWorklets
-    - Yoga
-  - RNReanimated/common (4.5.1):
+  - RNReanimated/apple (4.5.2):
     - hermes-engine
     - RCTRequired
     - RCTTypeSafety
@@ -3286,7 +3284,7 @@ PODS:
     - ReactNativeDependencies
     - RNWorklets
     - Yoga
-  - RNReanimated/view (4.5.1):
+  - RNReanimated/common (4.5.2):
     - hermes-engine
     - RCTRequired
     - RCTTypeSafety
@@ -3309,7 +3307,30 @@ PODS:
     - ReactNativeDependencies
     - RNWorklets
     - Yoga
-  - RNScreens (4.26.0):
+  - RNReanimated/view (4.5.2):
+    - hermes-engine
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-hermes
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - ReactNativeDependencies
+    - RNWorklets
+    - Yoga
+  - RNScreens (4.26.2):
     - hermes-engine
     - RCTRequired
     - RCTTypeSafety
@@ -3330,9 +3351,9 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
-    - RNScreens/common (= 4.26.0)
+    - RNScreens/common (= 4.26.2)
     - Yoga
-  - RNScreens/common (4.26.0):
+  - RNScreens/common (4.26.2):
     - hermes-engine
     - RCTRequired
     - RCTTypeSafety
@@ -3509,6 +3530,7 @@ DEPENDENCIES:
   - React-mutationobservernativemodule (from `../node_modules/react-native/ReactCommon/react/nativemodule/mutationobserver`)
   - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - react-native-webview (from `../node_modules/react-native-webview`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-networking (from `../node_modules/react-native/ReactCommon/react/networking`)
   - React-oscompat (from `../node_modules/react-native/ReactCommon/oscompat`)
@@ -3656,6 +3678,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-image-picker"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
   React-NativeModulesApple:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios"
   React-networking:
@@ -3802,6 +3826,7 @@ SPEC CHECKSUMS:
   React-mutationobservernativemodule: 654a565d30cc8d2ba4f72212f26660e34364caf4
   react-native-image-picker: adb86d86135d8d31009d027db361445c5a3db863
   react-native-safe-area-context: f7d04fb7a42e10aab12b453f66ec5d9f73fbb08d
+  react-native-webview: bb573d695bfd9a717d9394fd6e3fa1d57665636f
   React-NativeModulesApple: 6f8a4b47b7561c796094a6b03ab570c63fb98548
   React-networking: 2fbe0ada4dd67c2c65656d5429f71a96df5eaa02
   React-oscompat: e3c95718adca6d0e7ca9e5b01a04d057f4aa8f72
@@ -3840,8 +3865,8 @@ SPEC CHECKSUMS:
   RNFBApp: fb7f711cbcd95385a6d889c8c22967b1e7e72308
   RNFBFirestore: b28dd39a77ab4081956884053b88351441830ab6
   RNFBStorage: 463927b0823a2e6552c401db24b3b6343b63e9ef
-  RNReanimated: 9fc5fe025bb696d6a9f12150f892a038d795816f
-  RNScreens: 88edaa49347b1b86bbc8f9f61eae5e01ae5ef6d6
+  RNReanimated: cfb48ee57f9dabfc74d155ea80b14e488f403f16
+  RNScreens: eb1996a9e60df952cd6112c78062de0f64c47495
   RNSVG: 62a6c89ec3d32194bbbbb423388776411f783d17
   RNWorklets: 1e4326e17306bffc161b31e0087ee08e80d7dc99
   Yoga: a9f26333e684a192cbb5d698ed7eab3053929519

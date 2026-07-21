@@ -1,7 +1,6 @@
 import { Pressable, Text, TextStyle } from 'react-native';
-import { useStyles } from './styles';
-import { IconTextButtonProps } from '../types';
-
+import { useStyles } from '@/components/Button/styles';
+import { IconTextButtonProps } from '@/components/types';
 
 const IconTextButton = ({
   title,
@@ -16,11 +15,7 @@ const IconTextButton = ({
   return (
     <Pressable style={[styles.container, style]} onPress={onPress}>
       {Icon && <Icon size={28} color={color} />}
-      {title && (
-        <Text style={[styles.text, textStyle]}>
-          {title}
-        </Text>
-      )}
+      {title && <Text style={[styles.text, textStyle]}>{title}</Text>}
     </Pressable>
   );
 };

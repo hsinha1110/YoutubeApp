@@ -38,7 +38,7 @@ export const useStyles = () =>
           textAlign: 'center',
           fontSize: moderateScale(20),
           fontWeight: '700',
-          color: Colors.INDIGO,
+          color: Colors.BLUE,
           marginBottom: moderateScale(20),
         },
 
@@ -62,7 +62,7 @@ export const useStyles = () =>
           marginTop: moderateScale(25),
           height: moderateScale(48),
           borderRadius: moderateScale(10),
-          backgroundColor: Colors.INDIGO,
+          backgroundColor: Colors.BLUE,
           justifyContent: 'center',
           alignItems: 'center',
         },

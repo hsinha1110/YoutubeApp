@@ -10,12 +10,12 @@ export const useStyles = () =>
       StyleSheet.create({
         container: {
           flex: 1,
-          backgroundColor: Colors.WHITE,
+          backgroundColor: Colors.CREAM,
         },
         addButton: {
           position: 'absolute',
           right: moderateScale(20),
-          bottom: moderateScale(20),
+          bottom: moderateScale(60),
           width: moderateScale(60),
           height: moderateScale(60),
           borderRadius: moderateScale(16),
@@ -67,6 +67,7 @@ export const useStyles = () =>
           borderRadius: moderateScale(20),
           padding: moderateScale(15),
           zIndex: 2,
+          paddingBottom: moderateScale(150),
         },
         card: {
           flexDirection: 'row',
@@ -100,7 +101,7 @@ export const useStyles = () =>
         courseName: {
           fontSize: moderateScale(18),
           fontWeight: '600',
-          color:Colors.BLACK,
+          color: Colors.BLACK,
         },
 
         videoText: {
@@ -110,7 +111,7 @@ export const useStyles = () =>
         },
         contentContainerStyle: {
           paddingBottom: moderateScale(30),
-        }
+        },
       }),
     [],
   );

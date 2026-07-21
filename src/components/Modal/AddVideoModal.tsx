@@ -1,7 +1,7 @@
 import React from 'react';
 import { Modal, Pressable, Text, TextInput, View } from 'react-native';
 import { AddVideoModalProps } from '../types';
-import { useStyles } from './styles';
+import { useStyles } from '@/components/Modal/styles';
 import Colors from '@/constants/Colors';
 
 const AddVideoModal: React.FC<AddVideoModalProps> = ({
@@ -23,10 +23,7 @@ const AddVideoModal: React.FC<AddVideoModalProps> = ({
     >
       <View style={styles.overlay}>
         <View style={styles.container}>
-          <Pressable
-            style={styles.closeButton}
-            onPress={onClose}
-          >
+          <Pressable style={styles.closeButton} onPress={onClose}>
             <Text style={styles.closeText}>✕</Text>
           </Pressable>
 
@@ -41,10 +38,7 @@ const AddVideoModal: React.FC<AddVideoModalProps> = ({
             style={styles.input}
           />
 
-          <Pressable
-            style={styles.saveButton}
-            onPress={onSave}
-          >
+          <Pressable style={styles.saveButton} onPress={onSave}>
             <Text style={styles.saveText}>Save</Text>
           </Pressable>
         </View>

@@ -1,8 +1,7 @@
 import { useMemo } from 'react';
 import { StyleSheet } from 'react-native';
-
-import Colors from '@/constants/Colors';
 import { moderateScale } from '@/styles/scaling';
+import Colors from '@/constants/Colors';
 
 export const useStyles = () =>
   useMemo(

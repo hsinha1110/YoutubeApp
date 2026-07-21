@@ -4,10 +4,21 @@ import Routes from '@/constants/Routes';
 
 export type RootStackParamList = {
   [Routes.HOME_SCREEN]: undefined;
-  [Routes.ADD_SCREEN]: undefined;
-  [Routes.ADD_DETAILS_SCREEN]: undefined;
-};
 
+  [Routes.ADD_SCREEN]: undefined;
+
+  [Routes.ADD_DETAILS_SCREEN]: {
+    course: {
+      id: string;
+      courseName: string;
+      banner: string;
+    };
+  };
+
+  [Routes.VIDEO_PLAYER_SCREEN]: {
+    url: string;
+  };
+};
 export type HomeScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
   typeof Routes.HOME_SCREEN
@@ -36,3 +47,8 @@ export interface AddCourseParams {
   courseName: string;
   imagePath: string;
 }
+
+export type AddDetailsRouteProp = RouteProp<
+  RootStackParamList,
+  typeof Routes.ADD_DETAILS_SCREEN
+>;

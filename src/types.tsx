@@ -1,7 +1,11 @@
 export interface ItemHomeScreenProps {
+  item: any;
+}
+
+export interface ItemVideoProps {
   item: {
     id: string;
-    courseName: string;
-    banner: string;
+    Image: string;
+    Link: string;
   };
 }
