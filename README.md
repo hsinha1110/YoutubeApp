@@ -64,4 +64,4 @@ npx react-native run-ios
 **Himanshu Sinha**
 
 - GitHub: https://github.com/hsinha1110
-- LinkedIn: *(Add your LinkedIn profile here)*
+- LinkedIn: https://www.linkedin.com/in/himanshu-sinha-parihar-6945a598/
