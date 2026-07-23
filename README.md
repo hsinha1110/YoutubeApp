@@ -1,18 +1,28 @@
+# 📺 YouTube App
+
+A modern YouTube application built with **React Native** and **TypeScript**. The app allows users to browse, search, and watch YouTube videos with a clean and responsive user interface.
+
+## 📹 Demo
+
 https://github.com/user-attachments/assets/7dd99603-9194-4247-85a0-e98910280e79
+
+---
 
 ## ✨ Features
 
 - 🎥 Browse trending and popular YouTube videos
-- 🔍 Search videos with real-time search
+- 🔍 Search YouTube videos with real-time results
 - 📂 Browse videos by categories
-- 📄 View video details, channel information, and statistics
-- ▶️ Play YouTube videos within the app using WebView
+- 📄 View video details, channel information, and video statistics
+- ▶️ Watch YouTube videos directly inside the app using WebView
 - 🖼️ High-quality video thumbnails
-- 📱 Responsive UI for Android and iOS
-- ⚡ Smooth scrolling with optimized FlatList
+- ⚡ Fast and smooth scrolling with FlatList optimization
 - 🔄 Pull-to-refresh support
-- 🔥 Firebase integration for data management
-- 🌙 Clean and modern UI
+- 📱 Responsive UI for Android and iOS
+- 🔥 Firebase integration
+- 🌙 Clean and modern user interface
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -21,6 +31,43 @@ https://github.com/user-attachments/assets/7dd99603-9194-4247-85a0-e98910280e79
 - Firebase
 - Firebase Storage
 - React Native WebView
-- FlatList
 - React Navigation
-- Android & iOS
+- Axios
+- FlatList
+- Android
+- iOS
+
+---
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/hsinha1110/YoutubeApp.git
+
+cd YoutubeApp
+
+npm install
+
+npx react-native run-android
+# or
+npx react-native run-ios
+```
+
+---
+
+## 📌 Future Improvements
+
+- ❤️ Like & Favorite videos
+- 📺 Watch history
+- 🔖 Playlist support
+- 🌙 Dark Mode
+- 🔔 Push Notifications
+
+---
+
+## 👨‍💻 Author
+
+**Himanshu Sinha**
+
+- GitHub: https://github.com/hsinha1110
+- LinkedIn: *(Add your LinkedIn profile here)*
