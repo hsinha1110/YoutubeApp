@@ -28,11 +28,9 @@ const HomeScreen: React.FC = () => {
           ...doc.data(),
         }));
         setCourseCount(snapshot.size);
-
         console.log('Total Courses:', snapshot.size);
         setCourses(list);
       });
-
     return () => unsubscribe();
   }, []);
 
@@ -54,7 +52,6 @@ const HomeScreen: React.FC = () => {
       <View style={styles.greenContainer}>
         <View style={styles.textContainer}>
           <Text style={styles.title}>Hi, Himanshu!</Text>
-
           <Text style={styles.subTitle}>
             Embark on a thrilling journey where React Native comes to change
             life!

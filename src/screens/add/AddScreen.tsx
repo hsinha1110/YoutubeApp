@@ -58,16 +58,13 @@ const AddScreen: React.FC = () => {
     }
     try {
       setLoading(true);
-
       await addCourse({
         courseName,
         imagePath: banner,
       });
       Alert.alert('Success', 'Course added successfully');
-
       setCourseName('');
       setBanner('');
-
       goBack();
     } catch (error) {
       console.log('Upload Error:', error);
