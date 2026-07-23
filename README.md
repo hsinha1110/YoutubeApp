@@ -59,16 +59,6 @@ npx react-native run-ios
 
 ---
 
-## 📌 Future Improvements
-
-- ❤️ Like & Favorite videos
-- 📺 Watch history
-- 🔖 Playlist support
-- 🌙 Dark Mode
-- 🔔 Push Notifications
-
----
-
 ## 👨‍💻 Author
 
 **Himanshu Sinha**
